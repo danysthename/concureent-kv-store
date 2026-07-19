@@ -1,0 +1,3 @@
+/home/daniyaalkhan/Documents/kv-store/build/CMakeFiles/kv-store.dir
+/home/daniyaalkhan/Documents/kv-store/build/CMakeFiles/edit_cache.dir
+/home/daniyaalkhan/Documents/kv-store/build/CMakeFiles/rebuild_cache.dir
