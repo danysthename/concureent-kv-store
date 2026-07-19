@@ -168,6 +168,43 @@ recovery_read/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/recovery_read.dir/build.make CMakeFiles/recovery_read.dir/build
 .PHONY : recovery_read/fast
 
+#=============================================================================
+# Target rules for targets named bench
+
+# Build rule for target.
+bench: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 bench
+.PHONY : bench
+
+# fast build rule for target.
+bench/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/bench.dir/build.make CMakeFiles/bench.dir/build
+.PHONY : bench/fast
+
+benchmarks/bench.o: benchmarks/bench.cpp.o
+.PHONY : benchmarks/bench.o
+
+# target to build an object file
+benchmarks/bench.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/bench.dir/build.make CMakeFiles/bench.dir/benchmarks/bench.cpp.o
+.PHONY : benchmarks/bench.cpp.o
+
+benchmarks/bench.i: benchmarks/bench.cpp.i
+.PHONY : benchmarks/bench.i
+
+# target to preprocess a source file
+benchmarks/bench.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/bench.dir/build.make CMakeFiles/bench.dir/benchmarks/bench.cpp.i
+.PHONY : benchmarks/bench.cpp.i
+
+benchmarks/bench.s: benchmarks/bench.cpp.s
+.PHONY : benchmarks/bench.s
+
+# target to generate assembly for a file
+benchmarks/bench.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/bench.dir/build.make CMakeFiles/bench.dir/benchmarks/bench.cpp.s
+.PHONY : benchmarks/bench.cpp.s
+
 src/main.o: src/main.cpp.o
 .PHONY : src/main.o
 
@@ -201,6 +238,7 @@ src/storage_engine.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/correctness_test.dir/build.make CMakeFiles/correctness_test.dir/src/storage_engine.cpp.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/recovery_write.dir/build.make CMakeFiles/recovery_write.dir/src/storage_engine.cpp.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/recovery_read.dir/build.make CMakeFiles/recovery_read.dir/src/storage_engine.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/bench.dir/build.make CMakeFiles/bench.dir/src/storage_engine.cpp.o
 .PHONY : src/storage_engine.cpp.o
 
 src/storage_engine.i: src/storage_engine.cpp.i
@@ -212,6 +250,7 @@ src/storage_engine.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/correctness_test.dir/build.make CMakeFiles/correctness_test.dir/src/storage_engine.cpp.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/recovery_write.dir/build.make CMakeFiles/recovery_write.dir/src/storage_engine.cpp.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/recovery_read.dir/build.make CMakeFiles/recovery_read.dir/src/storage_engine.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/bench.dir/build.make CMakeFiles/bench.dir/src/storage_engine.cpp.i
 .PHONY : src/storage_engine.cpp.i
 
 src/storage_engine.s: src/storage_engine.cpp.s
@@ -223,6 +262,7 @@ src/storage_engine.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/correctness_test.dir/build.make CMakeFiles/correctness_test.dir/src/storage_engine.cpp.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/recovery_write.dir/build.make CMakeFiles/recovery_write.dir/src/storage_engine.cpp.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/recovery_read.dir/build.make CMakeFiles/recovery_read.dir/src/storage_engine.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/bench.dir/build.make CMakeFiles/bench.dir/src/storage_engine.cpp.s
 .PHONY : src/storage_engine.cpp.s
 
 src/wal.o: src/wal.cpp.o
@@ -234,6 +274,7 @@ src/wal.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/correctness_test.dir/build.make CMakeFiles/correctness_test.dir/src/wal.cpp.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/recovery_write.dir/build.make CMakeFiles/recovery_write.dir/src/wal.cpp.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/recovery_read.dir/build.make CMakeFiles/recovery_read.dir/src/wal.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/bench.dir/build.make CMakeFiles/bench.dir/src/wal.cpp.o
 .PHONY : src/wal.cpp.o
 
 src/wal.i: src/wal.cpp.i
@@ -245,6 +286,7 @@ src/wal.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/correctness_test.dir/build.make CMakeFiles/correctness_test.dir/src/wal.cpp.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/recovery_write.dir/build.make CMakeFiles/recovery_write.dir/src/wal.cpp.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/recovery_read.dir/build.make CMakeFiles/recovery_read.dir/src/wal.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/bench.dir/build.make CMakeFiles/bench.dir/src/wal.cpp.i
 .PHONY : src/wal.cpp.i
 
 src/wal.s: src/wal.cpp.s
@@ -256,6 +298,7 @@ src/wal.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/correctness_test.dir/build.make CMakeFiles/correctness_test.dir/src/wal.cpp.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/recovery_write.dir/build.make CMakeFiles/recovery_write.dir/src/wal.cpp.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/recovery_read.dir/build.make CMakeFiles/recovery_read.dir/src/wal.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/bench.dir/build.make CMakeFiles/bench.dir/src/wal.cpp.s
 .PHONY : src/wal.cpp.s
 
 tests/correctness_test.o: tests/correctness_test.cpp.o
@@ -338,10 +381,14 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
+	@echo "... bench"
 	@echo "... correctness_test"
 	@echo "... kv-store"
 	@echo "... recovery_read"
 	@echo "... recovery_write"
+	@echo "... benchmarks/bench.o"
+	@echo "... benchmarks/bench.i"
+	@echo "... benchmarks/bench.s"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"

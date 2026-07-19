@@ -1,0 +1,1 @@
+/usr/bin/c++ CMakeFiles/bench.dir/benchmarks/bench.cpp.o CMakeFiles/bench.dir/src/storage_engine.cpp.o CMakeFiles/bench.dir/src/wal.cpp.o -o bench 

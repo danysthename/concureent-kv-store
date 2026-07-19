@@ -48,4 +48,5 @@ set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/correctness_test.dir/DependInfo.cmake"
   "CMakeFiles/recovery_write.dir/DependInfo.cmake"
   "CMakeFiles/recovery_read.dir/DependInfo.cmake"
+  "CMakeFiles/bench.dir/DependInfo.cmake"
   )
