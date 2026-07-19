@@ -129,6 +129,45 @@ kv-store/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/kv-store.dir/build.make CMakeFiles/kv-store.dir/build
 .PHONY : kv-store/fast
 
+#=============================================================================
+# Target rules for targets named correctness_test
+
+# Build rule for target.
+correctness_test: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 correctness_test
+.PHONY : correctness_test
+
+# fast build rule for target.
+correctness_test/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/correctness_test.dir/build.make CMakeFiles/correctness_test.dir/build
+.PHONY : correctness_test/fast
+
+#=============================================================================
+# Target rules for targets named recovery_write
+
+# Build rule for target.
+recovery_write: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 recovery_write
+.PHONY : recovery_write
+
+# fast build rule for target.
+recovery_write/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/recovery_write.dir/build.make CMakeFiles/recovery_write.dir/build
+.PHONY : recovery_write/fast
+
+#=============================================================================
+# Target rules for targets named recovery_read
+
+# Build rule for target.
+recovery_read: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 recovery_read
+.PHONY : recovery_read
+
+# fast build rule for target.
+recovery_read/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/recovery_read.dir/build.make CMakeFiles/recovery_read.dir/build
+.PHONY : recovery_read/fast
+
 src/main.o: src/main.cpp.o
 .PHONY : src/main.o
 
@@ -159,6 +198,9 @@ src/storage_engine.o: src/storage_engine.cpp.o
 # target to build an object file
 src/storage_engine.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/kv-store.dir/build.make CMakeFiles/kv-store.dir/src/storage_engine.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/correctness_test.dir/build.make CMakeFiles/correctness_test.dir/src/storage_engine.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/recovery_write.dir/build.make CMakeFiles/recovery_write.dir/src/storage_engine.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/recovery_read.dir/build.make CMakeFiles/recovery_read.dir/src/storage_engine.cpp.o
 .PHONY : src/storage_engine.cpp.o
 
 src/storage_engine.i: src/storage_engine.cpp.i
@@ -167,6 +209,9 @@ src/storage_engine.i: src/storage_engine.cpp.i
 # target to preprocess a source file
 src/storage_engine.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/kv-store.dir/build.make CMakeFiles/kv-store.dir/src/storage_engine.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/correctness_test.dir/build.make CMakeFiles/correctness_test.dir/src/storage_engine.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/recovery_write.dir/build.make CMakeFiles/recovery_write.dir/src/storage_engine.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/recovery_read.dir/build.make CMakeFiles/recovery_read.dir/src/storage_engine.cpp.i
 .PHONY : src/storage_engine.cpp.i
 
 src/storage_engine.s: src/storage_engine.cpp.s
@@ -175,6 +220,9 @@ src/storage_engine.s: src/storage_engine.cpp.s
 # target to generate assembly for a file
 src/storage_engine.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/kv-store.dir/build.make CMakeFiles/kv-store.dir/src/storage_engine.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/correctness_test.dir/build.make CMakeFiles/correctness_test.dir/src/storage_engine.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/recovery_write.dir/build.make CMakeFiles/recovery_write.dir/src/storage_engine.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/recovery_read.dir/build.make CMakeFiles/recovery_read.dir/src/storage_engine.cpp.s
 .PHONY : src/storage_engine.cpp.s
 
 src/wal.o: src/wal.cpp.o
@@ -183,6 +231,9 @@ src/wal.o: src/wal.cpp.o
 # target to build an object file
 src/wal.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/kv-store.dir/build.make CMakeFiles/kv-store.dir/src/wal.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/correctness_test.dir/build.make CMakeFiles/correctness_test.dir/src/wal.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/recovery_write.dir/build.make CMakeFiles/recovery_write.dir/src/wal.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/recovery_read.dir/build.make CMakeFiles/recovery_read.dir/src/wal.cpp.o
 .PHONY : src/wal.cpp.o
 
 src/wal.i: src/wal.cpp.i
@@ -191,6 +242,9 @@ src/wal.i: src/wal.cpp.i
 # target to preprocess a source file
 src/wal.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/kv-store.dir/build.make CMakeFiles/kv-store.dir/src/wal.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/correctness_test.dir/build.make CMakeFiles/correctness_test.dir/src/wal.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/recovery_write.dir/build.make CMakeFiles/recovery_write.dir/src/wal.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/recovery_read.dir/build.make CMakeFiles/recovery_read.dir/src/wal.cpp.i
 .PHONY : src/wal.cpp.i
 
 src/wal.s: src/wal.cpp.s
@@ -199,7 +253,82 @@ src/wal.s: src/wal.cpp.s
 # target to generate assembly for a file
 src/wal.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/kv-store.dir/build.make CMakeFiles/kv-store.dir/src/wal.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/correctness_test.dir/build.make CMakeFiles/correctness_test.dir/src/wal.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/recovery_write.dir/build.make CMakeFiles/recovery_write.dir/src/wal.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/recovery_read.dir/build.make CMakeFiles/recovery_read.dir/src/wal.cpp.s
 .PHONY : src/wal.cpp.s
+
+tests/correctness_test.o: tests/correctness_test.cpp.o
+.PHONY : tests/correctness_test.o
+
+# target to build an object file
+tests/correctness_test.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/correctness_test.dir/build.make CMakeFiles/correctness_test.dir/tests/correctness_test.cpp.o
+.PHONY : tests/correctness_test.cpp.o
+
+tests/correctness_test.i: tests/correctness_test.cpp.i
+.PHONY : tests/correctness_test.i
+
+# target to preprocess a source file
+tests/correctness_test.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/correctness_test.dir/build.make CMakeFiles/correctness_test.dir/tests/correctness_test.cpp.i
+.PHONY : tests/correctness_test.cpp.i
+
+tests/correctness_test.s: tests/correctness_test.cpp.s
+.PHONY : tests/correctness_test.s
+
+# target to generate assembly for a file
+tests/correctness_test.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/correctness_test.dir/build.make CMakeFiles/correctness_test.dir/tests/correctness_test.cpp.s
+.PHONY : tests/correctness_test.cpp.s
+
+tests/recovery_read.o: tests/recovery_read.cpp.o
+.PHONY : tests/recovery_read.o
+
+# target to build an object file
+tests/recovery_read.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/recovery_read.dir/build.make CMakeFiles/recovery_read.dir/tests/recovery_read.cpp.o
+.PHONY : tests/recovery_read.cpp.o
+
+tests/recovery_read.i: tests/recovery_read.cpp.i
+.PHONY : tests/recovery_read.i
+
+# target to preprocess a source file
+tests/recovery_read.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/recovery_read.dir/build.make CMakeFiles/recovery_read.dir/tests/recovery_read.cpp.i
+.PHONY : tests/recovery_read.cpp.i
+
+tests/recovery_read.s: tests/recovery_read.cpp.s
+.PHONY : tests/recovery_read.s
+
+# target to generate assembly for a file
+tests/recovery_read.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/recovery_read.dir/build.make CMakeFiles/recovery_read.dir/tests/recovery_read.cpp.s
+.PHONY : tests/recovery_read.cpp.s
+
+tests/recovery_write.o: tests/recovery_write.cpp.o
+.PHONY : tests/recovery_write.o
+
+# target to build an object file
+tests/recovery_write.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/recovery_write.dir/build.make CMakeFiles/recovery_write.dir/tests/recovery_write.cpp.o
+.PHONY : tests/recovery_write.cpp.o
+
+tests/recovery_write.i: tests/recovery_write.cpp.i
+.PHONY : tests/recovery_write.i
+
+# target to preprocess a source file
+tests/recovery_write.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/recovery_write.dir/build.make CMakeFiles/recovery_write.dir/tests/recovery_write.cpp.i
+.PHONY : tests/recovery_write.cpp.i
+
+tests/recovery_write.s: tests/recovery_write.cpp.s
+.PHONY : tests/recovery_write.s
+
+# target to generate assembly for a file
+tests/recovery_write.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/recovery_write.dir/build.make CMakeFiles/recovery_write.dir/tests/recovery_write.cpp.s
+.PHONY : tests/recovery_write.cpp.s
 
 # Help Target
 help:
@@ -209,7 +338,10 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
+	@echo "... correctness_test"
 	@echo "... kv-store"
+	@echo "... recovery_read"
+	@echo "... recovery_write"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"
@@ -219,6 +351,15 @@ help:
 	@echo "... src/wal.o"
 	@echo "... src/wal.i"
 	@echo "... src/wal.s"
+	@echo "... tests/correctness_test.o"
+	@echo "... tests/correctness_test.i"
+	@echo "... tests/correctness_test.s"
+	@echo "... tests/recovery_read.o"
+	@echo "... tests/recovery_read.i"
+	@echo "... tests/recovery_read.s"
+	@echo "... tests/recovery_write.o"
+	@echo "... tests/recovery_write.i"
+	@echo "... tests/recovery_write.s"
 .PHONY : help
 
 

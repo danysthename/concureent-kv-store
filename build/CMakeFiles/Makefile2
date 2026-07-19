@@ -64,6 +64,9 @@ CMAKE_BINARY_DIR = /home/daniyaalkhan/Documents/kv-store/build
 
 # The main recursive "all" target.
 all: CMakeFiles/kv-store.dir/all
+all: CMakeFiles/correctness_test.dir/all
+all: CMakeFiles/recovery_write.dir/all
+all: CMakeFiles/recovery_read.dir/all
 .PHONY : all
 
 # The main recursive "preinstall" target.
@@ -72,6 +75,9 @@ preinstall:
 
 # The main recursive "clean" target.
 clean: CMakeFiles/kv-store.dir/clean
+clean: CMakeFiles/correctness_test.dir/clean
+clean: CMakeFiles/recovery_write.dir/clean
+clean: CMakeFiles/recovery_read.dir/clean
 .PHONY : clean
 
 #=============================================================================
@@ -81,7 +87,7 @@ clean: CMakeFiles/kv-store.dir/clean
 CMakeFiles/kv-store.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/kv-store.dir/build.make CMakeFiles/kv-store.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/kv-store.dir/build.make CMakeFiles/kv-store.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/daniyaalkhan/Documents/kv-store/build/CMakeFiles --progress-num=1,2,3,4 "Built target kv-store"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/daniyaalkhan/Documents/kv-store/build/CMakeFiles --progress-num=5,6,7,8 "Built target kv-store"
 .PHONY : CMakeFiles/kv-store.dir/all
 
 # Build rule for subdir invocation for target.
@@ -99,6 +105,84 @@ kv-store: CMakeFiles/kv-store.dir/rule
 CMakeFiles/kv-store.dir/clean:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/kv-store.dir/build.make CMakeFiles/kv-store.dir/clean
 .PHONY : CMakeFiles/kv-store.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/correctness_test.dir
+
+# All Build rule for target.
+CMakeFiles/correctness_test.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/correctness_test.dir/build.make CMakeFiles/correctness_test.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/correctness_test.dir/build.make CMakeFiles/correctness_test.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/daniyaalkhan/Documents/kv-store/build/CMakeFiles --progress-num=1,2,3,4 "Built target correctness_test"
+.PHONY : CMakeFiles/correctness_test.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/correctness_test.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/daniyaalkhan/Documents/kv-store/build/CMakeFiles 4
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/correctness_test.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/daniyaalkhan/Documents/kv-store/build/CMakeFiles 0
+.PHONY : CMakeFiles/correctness_test.dir/rule
+
+# Convenience name for target.
+correctness_test: CMakeFiles/correctness_test.dir/rule
+.PHONY : correctness_test
+
+# clean rule for target.
+CMakeFiles/correctness_test.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/correctness_test.dir/build.make CMakeFiles/correctness_test.dir/clean
+.PHONY : CMakeFiles/correctness_test.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/recovery_write.dir
+
+# All Build rule for target.
+CMakeFiles/recovery_write.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/recovery_write.dir/build.make CMakeFiles/recovery_write.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/recovery_write.dir/build.make CMakeFiles/recovery_write.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/daniyaalkhan/Documents/kv-store/build/CMakeFiles --progress-num=13,14,15,16 "Built target recovery_write"
+.PHONY : CMakeFiles/recovery_write.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/recovery_write.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/daniyaalkhan/Documents/kv-store/build/CMakeFiles 4
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/recovery_write.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/daniyaalkhan/Documents/kv-store/build/CMakeFiles 0
+.PHONY : CMakeFiles/recovery_write.dir/rule
+
+# Convenience name for target.
+recovery_write: CMakeFiles/recovery_write.dir/rule
+.PHONY : recovery_write
+
+# clean rule for target.
+CMakeFiles/recovery_write.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/recovery_write.dir/build.make CMakeFiles/recovery_write.dir/clean
+.PHONY : CMakeFiles/recovery_write.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/recovery_read.dir
+
+# All Build rule for target.
+CMakeFiles/recovery_read.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/recovery_read.dir/build.make CMakeFiles/recovery_read.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/recovery_read.dir/build.make CMakeFiles/recovery_read.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/daniyaalkhan/Documents/kv-store/build/CMakeFiles --progress-num=9,10,11,12 "Built target recovery_read"
+.PHONY : CMakeFiles/recovery_read.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/recovery_read.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/daniyaalkhan/Documents/kv-store/build/CMakeFiles 4
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/recovery_read.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/daniyaalkhan/Documents/kv-store/build/CMakeFiles 0
+.PHONY : CMakeFiles/recovery_read.dir/rule
+
+# Convenience name for target.
+recovery_read: CMakeFiles/recovery_read.dir/rule
+.PHONY : recovery_read
+
+# clean rule for target.
+CMakeFiles/recovery_read.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/recovery_read.dir/build.make CMakeFiles/recovery_read.dir/clean
+.PHONY : CMakeFiles/recovery_read.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

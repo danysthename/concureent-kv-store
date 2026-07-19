@@ -1,0 +1,1 @@
+/usr/bin/c++ CMakeFiles/recovery_read.dir/tests/recovery_read.cpp.o CMakeFiles/recovery_read.dir/src/storage_engine.cpp.o CMakeFiles/recovery_read.dir/src/wal.cpp.o -o recovery_read 

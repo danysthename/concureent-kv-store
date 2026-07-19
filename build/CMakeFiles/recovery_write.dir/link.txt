@@ -1,0 +1,1 @@
+/usr/bin/c++ CMakeFiles/recovery_write.dir/tests/recovery_write.cpp.o CMakeFiles/recovery_write.dir/src/storage_engine.cpp.o CMakeFiles/recovery_write.dir/src/wal.cpp.o -o recovery_write 

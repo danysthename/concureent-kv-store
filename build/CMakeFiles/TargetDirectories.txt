@@ -1,3 +1,6 @@
 /home/daniyaalkhan/Documents/kv-store/build/CMakeFiles/kv-store.dir
+/home/daniyaalkhan/Documents/kv-store/build/CMakeFiles/correctness_test.dir
+/home/daniyaalkhan/Documents/kv-store/build/CMakeFiles/recovery_write.dir
+/home/daniyaalkhan/Documents/kv-store/build/CMakeFiles/recovery_read.dir
 /home/daniyaalkhan/Documents/kv-store/build/CMakeFiles/edit_cache.dir
 /home/daniyaalkhan/Documents/kv-store/build/CMakeFiles/rebuild_cache.dir
