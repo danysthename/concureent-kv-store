@@ -1,1 +1,1 @@
-/usr/bin/c++ "CMakeFiles/kv-store.dir/src/main.cpp.o" "CMakeFiles/kv-store.dir/src/storage_engine.cpp.o" "CMakeFiles/kv-store.dir/src/wal.cpp.o" -o kv-store 
+/usr/bin/c++ -fsanitize=thread "CMakeFiles/kv-store.dir/src/main.cpp.o" "CMakeFiles/kv-store.dir/src/storage_engine.cpp.o" "CMakeFiles/kv-store.dir/src/wal.cpp.o" -o kv-store 

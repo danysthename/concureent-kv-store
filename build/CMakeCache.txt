@@ -215,6 +215,9 @@ CMAKE_TAPI:FILEPATH=CMAKE_TAPI-NOTFOUND
 // Studio IDE projects all commands are done without /nologo.
 CMAKE_VERBOSE_MAKEFILE:BOOL=FALSE
 
+//Enable ThreadSanitizer
+ENABLE_TSAN:BOOL=ON
+
 //Value Computed by CMake
 kv-store_BINARY_DIR:STATIC=/home/daniyaalkhan/Documents/kv-store/build
 
