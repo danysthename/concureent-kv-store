@@ -1,0 +1,1 @@
+Get is 10x faster than PUT becuase PUT involves writing to disk because of wal.
